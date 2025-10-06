@@ -105,6 +105,50 @@ void loop() {
 }
 ```
 
+### LED Blinking With Push Button Code
+
+To display a code snippet, use fenced code blocks and specify the language (`arduino` or `cpp`) for syntax highlighting:
+
+```arduino
+#define LED_PIN 8
+#define BUTTON_PIN 7
+
+void setup() {
+  pinMode(LED_PIN, OUTPUT);
+  pinMode(BUTTON_PIN, INPUT);
+}
+
+void loop() {
+  if (digitalRead(BUTTON_PIN) == HIGH) {
+    digitalWrite(LED_PIN, HIGH);
+  }
+  else {
+    digitalWrite(LED_PIN, LOW);
+  }
+}
+```
+
+### Brightness Control with Potentiometer Code
+
+To display a code snippet, use fenced code blocks and specify the language (`arduino` or `cpp`) for syntax highlighting:
+
+```arduino
+#define LED_PIN 7
+#define POTENTIOMETER_PIN A1
+
+void setup()
+{
+  pinMode(LED_PIN, OUTPUT);
+}
+
+void loop()
+{
+  int potentiometerValue = analogRead(POTENTIOMETER_PIN);
+  int brightness = potentiometerValue / 4;
+  analogWrite(LED_PIN, brightness);
+}
+```
+
 ## 🤝 Contributing
 
 We welcome contributions from the community\! If you have new LED projects, cleaner code, or schematic improvements, please follow these steps:
