@@ -89,7 +89,7 @@ You will find the complete Arduino sketches (`.ino` files) for all projects in t
 
 To display a code snippet, use fenced code blocks and specify the language (`arduino` or `cpp`) for syntax highlighting:
 
-````arduino
+```arduino
 // The classic LED blink sketch
 const int ledPin = 13;
 
@@ -103,6 +103,7 @@ void loop() {
   digitalWrite(ledPin, LOW);  // Turn the LED off
   delay(1000);                // Wait for a second
 }
+```
 
 ## 🤝 Contributing
 
@@ -124,4 +125,7 @@ We welcome contributions from the community\! If you have new LED projects, clea
 ---
 
 ## 📜 License
-````
+
+```
+
+```
